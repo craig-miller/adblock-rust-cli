@@ -1,0 +1,15 @@
+[package]
+name = "adblock-rust-cli"
+version = "0.1.0"
+edition = "2021"
+description = "Convert EasyList/ABP filter lists to Apple WKContentRuleList JSON"
+license = "MIT"
+repository = "https://github.com/craig-miller/adblock-rust-cli"
+
+[dependencies]
+adblock = { version = "0.12", default-features = false, features = ["content-blocking", "css-validation", "embedded-domain-resolver", "full-regex-handling"] }
+serde_json = "1"
+
+[profile.release]
+lto = "thin"
+strip = true
