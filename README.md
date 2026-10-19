@@ -2,7 +2,7 @@
 
 Thin command-line wrapper around [`brave/adblock-rust`](https://github.com/brave/adblock-rust) that converts EasyList/ABP-format filter lists into Apple's WKContentRuleList JSON format — the format consumed by WebKit's `WebKitUserContentFilterStore` API.
 
-Written to feed the WebKit-native content-filter pipeline used by [zentoo](https://github.com/craig-miller/zentoo-overlay)'s vimb ad-blocking layer, but it's a general-purpose tool. Any WebKit-based application that consumes `WKContentRuleList` JSON can use its output.
+Written to feed the WebKit-native content-filter pipeline used by [vimb-blocklist](https://github.com/craig-miller/vimb-blocklist), available through [gentoo-overlay](https://github.com/craig-miller/gentoo-overlay), but it's a general-purpose tool. Any WebKit-based application that consumes `WKContentRuleList` JSON can use its output.
 
 ## Usage
 
